@@ -1,0 +1,29 @@
+<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="brandGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Stylized Z Symbol -->
+  <g filter="url(#glow)">
+    <!-- Top Bar -->
+    <path d="M10 20 H70 L60 35 H20 L10 20Z" fill="url(#brandGradient)" opacity="0.9"/>
+    <!-- Diagonal -->
+    <path d="M60 30 L30 80 L45 80 L75 30 Z" fill="url(#brandGradient)"/>
+    <!-- Bottom Bar -->
+    <path d="M25 75 H85 L95 90 H35 L25 75Z" fill="url(#brandGradient)" opacity="0.9"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="110" y="70" font-family="Arial, sans-serif" font-weight="bold" font-size="48" fill="url(#brandGradient)" style="font-family: 'Outfit', sans-serif;">Zentra</text>
+  <text x="270" y="70" font-family="Arial, sans-serif" font-size="24" fill="#cbd5e1" style="font-family: 'Inter', sans-serif;">Pvt Ltd</text>
+</svg>
